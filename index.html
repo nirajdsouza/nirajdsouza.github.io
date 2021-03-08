@@ -105,7 +105,7 @@
 									<li><a href="https://www.linkedin.com/in/nirajdsouza" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 									<li><a href="https://github.com/nirajdsouza" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
-								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 							</article>
 
 					</div>
@@ -122,12 +122,16 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script type="text/javascript">var submitted=false;</script>
+			<script src="assets/js/jquery.form.min.js"></script>
 			<script type="text/javascript">
-				$('#gform').on('submit', function(e) {
-					$('#gform *').fadeOut(2000);
-					$('#gform').prepend('Your submission has been processed...');
-				});
+				document.getElementById('gform').target = 'hidden_iframe';
+				var iframe = document.getElementById('hidden_iframe');
+				if (iframe) {
+					iframe.onload = function () {
+						$('#gform *').fadeOut(0);
+						$('#gform').prepend('Thank you for your message. I will get back to you shortly.');
+				}
+			}
 			</script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
