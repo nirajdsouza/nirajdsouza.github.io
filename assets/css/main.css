@@ -1657,13 +1657,3 @@ input, select, textarea {
 			opacity: 0;
 		}
 		
-.container
-{
-  display:flex;
-  align-items:center;
-  justify-content: center;
-}
-.container text
-{
-padding:10px;
-}
