@@ -72,6 +72,63 @@ input, select, textarea {
 	appearance: none;
 }
 
+.resume-pdf-link {
+  float: right;
+  font-size: 0.9em;
+  margin-top: -2em;
+}
+
+.resume__bullets {
+  list-style: disc;
+  padding-left: 1.2em;
+}
+
+.resume__bullets li {
+  padding-left: 0;
+}
+
+.resume__role-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.resume__company {
+  margin-bottom: 0;
+}
+
+.resume__location {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+  .resume__role-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.resume h2, .resume h3 {
+  text-transform: none;
+  letter-spacing: 0.05rem;
+}
+
+.actions.special li {
+  margin: 0 0.5rem;
+}
+
 /* Basic */
 
 	@-ms-viewport {
