@@ -104,6 +104,14 @@ input, select, textarea {
   white-space: nowrap;
 }
 
+.resume__name {
+  font-size: 1.9rem;
+}
+
+#experience-title {
+  margin-top: 2rem;
+}
+
 @media screen and (max-width: 480px) {
   .resume__role-top {
     flex-direction: column;
