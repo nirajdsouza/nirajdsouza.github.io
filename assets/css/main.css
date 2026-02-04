@@ -72,6 +72,20 @@ input, select, textarea {
 	appearance: none;
 }
 
+#header .content p.hero-description {
+  text-transform: none !important;
+  letter-spacing: 0.02rem !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 1.75rem auto 0;
+  text-align: left;
+  text-align-last: center;
+  opacity: 0.92;
+  font-weight: 400;
+  color: rgba(255,255,255,0.9);
+}
+
 .resume-pdf-link {
   float: right;
   font-size: 0.9em;
