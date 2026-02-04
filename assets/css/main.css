@@ -104,6 +104,12 @@ input, select, textarea {
   white-space: nowrap;
 }
 
+.resume__dates {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
 .resume__name {
   font-size: 1.9rem;
 }
