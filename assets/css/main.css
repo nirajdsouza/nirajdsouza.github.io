@@ -129,6 +129,14 @@ input, select, textarea {
   margin: 0 0.5rem;
 }
 
+.resume__header {
+  text-align: center;
+}
+
+.resume__contact {
+  text-align: center;
+}
+
 /* Basic */
 
 	@-ms-viewport {
